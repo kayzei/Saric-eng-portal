@@ -1,0 +1,5 @@
+{
+  "name": "SARIC Engineering Data Portal",
+  "description": "A centralized platform to manage civil engineering, surveying, and project data for SARIC Engineering Zambia. Integrates with the existing SARIC Engineering website.",
+  "requestFramePermissions": []
+}
