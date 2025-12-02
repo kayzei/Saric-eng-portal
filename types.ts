@@ -1,3 +1,4 @@
+
 export enum Role {
   ADMIN = 'Admin',
   MANAGER = 'Manager',
@@ -41,4 +42,18 @@ export interface Employee {
   department: string;
   hireDate: string;
   assignedProject: string;
+}
+
+export interface Vehicle {
+  id: string;
+  type: string;
+  plate: string;
+  driver: string;
+  owner: 'SARIC' | 'Outsourced';
+  status: 'In Transit' | 'Idle' | 'Maintenance' | 'Loading';
+  location: string;
+  destination: string;
+  eta: string;
+  fuelLevel: number;
+  healthStatus: 'Good' | 'Warning' | 'Critical';
 }

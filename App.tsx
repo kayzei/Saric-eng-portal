@@ -6,6 +6,8 @@ import Suppliers from './components/Suppliers';
 import Projects from './components/Projects';
 import Employees from './components/Employees';
 import Reports from './components/Reports';
+import Banking from './components/Banking';
+import Fleet from './components/Fleet';
 import Login from './components/Login';
 import { User } from './types';
 
@@ -48,8 +50,12 @@ const App: React.FC = () => {
         return <Projects user={user} />;
       case 'employees':
         return <Employees user={user} />;
+      case 'banking':
+        return <Banking user={user} />;
       case 'reports':
         return <Reports />;
+      case 'fleet':
+        return <Fleet user={user} />;
       default:
         return <Dashboard user={user} />;
     }
